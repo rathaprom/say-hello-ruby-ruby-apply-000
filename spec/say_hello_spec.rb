@@ -12,9 +12,7 @@ describe "say_hello" do
     say_hello ("Ruby Programmer")
   end
 end
-def greeting(name)
-  say_hello("name")
-end
+
 def greeting(name = "Ruby programmer")
   puts "Hello, #{name}"
 end
