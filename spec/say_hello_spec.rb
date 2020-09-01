@@ -2,17 +2,12 @@ lear=require_relative './spec_helper'
 
 describe "say_hello" do 
   
-  it 'accepts an argument of a name and prints out Hello with that Name' do
-    expect($stdout).to receive(:puts).with("Hello Kent Beck!")
-   say_hello ("Kent Beck")
-  end
-
-  it 'defaults to Ruby Programmer when no name is passed in' do
-    expect($stdout).to receive(:puts).with("Hello Ruby Programmer!")
-    say_hello ("Ruby Programmer")
-  end
-end
-
-def greeting(name = "Ruby programmer")
+  def greeting(name = "Kent Beck")
   puts "say_hello, #{name}"
 end
+
+ def greeting(name = "Ruby programmer")
+  puts "say_hello, #{name}"
+end
+end
+
